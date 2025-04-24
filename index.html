@@ -3,151 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kitchen Scale Dissection Project | Micah George</title>
+    <title>Digital Kitchen Scale Dissection | Micah George</title>
     <style>
         body {
-            background-color: black;
-            color: blue;
-            font-family: Arial;
-            text-align: center;
-        }
-        h1 {
-            text-transform: uppercase;
-            font-size: 10vw;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-        h2 {
-            text-transform: uppercase;
-            font-size: 3vw;
-            font-weight: bold;
+            background-color: #f4f4f4;
+            color: #222;
+            font-family: 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
         .container {
-            width: 80%;
+            width: 85%;
             margin: auto;
             padding: 20px;
         }
-        img {
-            margin: 20px 0;
-        }
-        .blackbox-img {
-            width: 100%; /* Makes the blackbox image full width */
-            
-        }
-        .team-member img {
-            width: 100%;
-            height: auto;
-            max-width: 200px;
-            margin-bottom: 10px;
-        }
-        .team {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 40px; /* Space between team members */
-            margin-top: 40px;
-        }
-        .team-member {
+        h1 {
+            font-size: 3rem;
             text-align: center;
-            width: 200px; /* Control width of each team member container */
-        }
-        .documentation {
-            text-align: left; /* Aligns the entire Documentation section to the left */
-        }
-        .documentation ul {
-            list-style-type: disc;
-            padding-left: 20px;
-            display: inline-block;
-        }
-        .documentation a {
-            color: blue;
-            text-decoration: underline;
-        }
-        .footer {
             margin-top: 40px;
-            font-size: 24px;
-            font-weight: bold;
+            color: #0044cc;
         }
-        .breakdown-text {
-            text-align: left; /* Align the Breakdown section text to the left */
+        h2 {
+            font-size: 2rem;
+            color: #003399;
+            margin-top: 40px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
         }
-        .section-divider {
-            border-top: 2px solid blue;
-            margin: 40px 0;
+        p, li {
+            font-size: 1.1rem;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        ul {
+            padding-left: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <p style="font-size: 1.35em;">WE'RE DESIGNING A GUITAR PEDAL.</p>
+        <h1>Digital Kitchen Scale Dissection Project</h1>
         
-        <h1>DISSECTION PROJECT</h1>
-        <img class="blackbox-img" src="theblackboximg.png" alt="Image of The Blackbox">
-        <p>An entirely hands-free guitar FX pedal that provides the user with the ability to switch from a variety of different FX presets with a single input mid-performance.</p>
+        <h2>1. Introduction</h2>
+        <p><strong>Micah George</strong>, Computer Engineering Major.</p>
+        <p>I have always had a deep interest in robotics-related electives and projects throughout both high school and college. I chose to dissect the Taylor Digital Kitchen Scale (Model 5273821) because it demonstrates several key embedded system concepts: sensor interfacing, signal processing and digital filtering, microcontroller usage with LCD interfaces, and principles of low-power design.</p>
 
-        <div class="section-divider"></div>
-        
-        <h2 class="breakdown-text">Breakdown</h2>
-        <p class="breakdown-text">When a guitarist is playing on-stage, the last thing they want to do is bend down and turn knobs every time they need to adjust their FX. The Blackbox allows the user to switch seamlessly between parameters mid-performance, using only their feet. While other products may have similar capabilities, they do not allow the user to be completely hands-free. This product allows the user to switch between three distinct FX of their choosing and offers a pedal for volume control, along with an LCD screen to display which FX the user is currently editing.</p>
+        <h2>2. Product Market and Retail Information</h2>
+        <ul>
+            <li><strong>Product History:</strong> Taylor has been producing precision measurement instruments for over 150 years. This digital kitchen scale is part of their home appliance product line.</li>
+            <li><strong>MSRP and Street Prices:</strong> MSRP around $25, typically found online for $15–$20.</li>
+            <li><strong>Retail Outlets:</strong> Available at Amazon, Walmart, Target, and Taylor's official site.</li>
+            <li><strong>Rebranded/OEM Versions:</strong> Often rebranded by home goods companies under private labels.</li>
+        </ul>
 
-        <div class="section-divider"></div>
-        
-        <h2 class="breakdown-text">Documentation</h2>
-        <div class="documentation">
-            <ul>
-                <li><a href="TheBlackbox_ExecutiveSummary_Final.pdf" style="font-size: 1.35em;">EXECUTIVE SUMMARY</a></li>
-                <li><a href="AlternativeInstrumentation_ProblemStatement_Final.pdf" style="font-size: 1.35em;">PROBLEM STATEMENT</a></li>
-                <li><a href="TheBlackbox_DesignRequirementSpecifications_Final-6.pdf" style="font-size: 1.35em;">ENGINEERING REQUIREMENTS</a></li>
-                <li><a href="TheBlackbox_ApproachDocument_Final-1-1.pdf" style="font-size: 1.35em;">DESIGN APPROACH</a></li>
-            </ul>
-        </div>
+        <h2>3. Dissection Photo Journal</h2>
+        <img src="01-boxedscale.jpg" alt="Boxed Scale">
+        <img src="02-unboxing1.jpg" alt="Unboxing Step 1">
+        <img src="03-unboxing2.jpg" alt="Unboxing Step 2">
+        <img src="04-unboxing3.jpg" alt="Unboxing Step 3">
+        <img src="05-predissection1.jpg" alt="Pre-dissection View 1">
+        <img src="06-predissection2.jpg" alt="Pre-dissection View 2">
+        <img src="07-predissection3.jpg" alt="Pre-dissection View 3">
+        <img src="08-predissection4.jpg" alt="Pre-dissection View 4">
+        <img src="09-batteries.jpg" alt="Battery Compartment">
+        <img src="10-packaginginfo.jpg" alt="Packaging Info">
 
-        <div class="section-divider"></div>
-        
-        <h1>Meet The Team</h1>
-        <h2>&#9835; Alternative Instrumentation &#9835;</h2>
-        
-        <div class="team">
-            <div class="team-member">
-                <img src="team1.jpg" alt="Cash Henderson">
-                    <p><strong>CASH HENDERSON</strong></p>
-                <p>Team Lead & Digital FX Design Sub-Team Co-Lead</p>
-            </div>
-            <div class="team-member">
-                <img src="team2.jpg" alt="Ian Avant">
-                <p><strong>IAN AVANT</strong></p>
-                <p>Digital FX Design Sub-Team Co-Lead</p>
-            </div>
-            <div class="team-member">
-                <img src="team3.jpg" alt="Max Hayhurst">
-                <p><strong>MAX HAYHURST</strong></p>
-                <p>User Interface & Enclosure Sub-Team Lead</p>
-            </div>
-            <div class="team-member">
-                <img src="team4.jpg" alt="Micah George">
-                <p><strong>MICAH GEORGE</strong></p>
-                <p>Micro Control Logic Sub-Team Lead</p>
-            </div>
-            <div class="team-member">
-                <img src="team6.jpg" alt="Clayton Jobe">
-                <p><strong>CLAYTON JOBE</strong></p>
-                <p>Micro Control Logic & U.I. Sub-Teams Support</p>
-            </div>
-        </div>
-        
-        <div class="advisor-container" style="display: flex; justify-content: center; align-items: center; gap: 20px;">
-            <div>
-                <p>And our faculty advisor, DR. JOHN BALL!</p>
-                
-                <p>He researches digital signal processing and helps</p>
-                <p></p>give us ideas on how this type of project is shaped.</p>
-            </div>
-            <img src="teamadvisor.png" alt="Dr. John Ball" style="width: 250px; height: auto;">
-        </div>
+        <h2>4. Product Operation</h2>
+        <ul>
+            <li><strong>Human-machine interfaces:</strong> Power/Tare button, Unit button, Hold button, LCD screen.</li>
+            <li><strong>Usage Timing Diagrams:</strong> Pending measurement capture and debounce routines.</li>
+        </ul>
 
-        <div class="section-divider"></div>
-        
-        <div class="footer" style="font-size: 10vw; font-weight: bold;">THE BLACKBOX</div>
+        <h2>5. Product Analysis</h2>
+        <ul>
+            <li><strong>High-level Product Design Diagram:</strong> To be drafted.</li>
+            <li><strong>Electronic Block Diagrams:</strong> Will include microcontroller, load cell amplifier, display, and input buttons.</li>
+            <li><strong>Expected Operation Tables:</strong> Values for voltage, current, battery life estimation to be tested.</li>
+            <li><strong>Component Schematics and BoM:</strong> In development with estimated component prices and material costs.</li>
+        </ul>
+
+        <h2>6. Product Reassembly</h2>
+        <p>The product must be successfully reassembled and verified to function as originally intended. Final checks are pending.</p>
+
+        <h2>7. Lessons Learned</h2>
+        <p>This dissection project gave me hands-on insight into embedded design decisions, challenges with compact form factor integration, and provided practical understanding of system power management.</p>
     </div>
 </body>
 </html>
