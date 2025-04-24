@@ -3,95 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Kitchen Scale Dissection | Micah George</title>
+    <title>Kitchen Scale Dissection Project | Micah George</title>
     <style>
         body {
-            background-color: #f4f4f4;
-            color: #222;
-            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #111;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            text-transform: uppercase;
+            font-size: 5vw;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        h2 {
+            text-transform: uppercase;
+            font-size: 2.5vw;
+            font-weight: bold;
+            margin: 30px 0 10px;
+        }
+        p, li {
+            font-size: 1.2em;
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
+            text-align: left;
         }
         .container {
-            width: 85%;
+            width: 90%;
             margin: auto;
             padding: 20px;
         }
-        h1 {
-            font-size: 3rem;
-            text-align: center;
-            margin-top: 40px;
-            color: #0044cc;
+        .section-divider {
+            border-top: 2px solid #00aaff;
+            margin: 40px 0;
         }
-        h2 {
-            font-size: 2rem;
-            color: #003399;
-            margin-top: 40px;
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 10px;
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            margin-top: 20px;
         }
-        p, li {
-            font-size: 1.1rem;
-        }
-        img {
-            max-width: 100%;
+        .gallery img {
+            width: 100%;
             height: auto;
-            display: block;
-            margin: 20px auto;
+            border: 1px solid #444;
+            border-radius: 8px;
         }
-        ul {
-            padding-left: 20px;
+        .caption {
+            font-size: 1em;
+            margin-top: 8px;
+            color: #ccc;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Digital Kitchen Scale Dissection Project</h1>
-        
-        <h2>1. Introduction</h2>
-        <p><strong>Micah George</strong>, Computer Engineering Major.</p>
-        <p>I have always had a deep interest in robotics-related electives and projects throughout both high school and college. I chose to dissect the Taylor Digital Kitchen Scale (Model 5273821) because it demonstrates several key embedded system concepts: sensor interfacing, signal processing and digital filtering, microcontroller usage with LCD interfaces, and principles of low-power design.</p>
+        <h1>Kitchen Scale Dissection Project</h1>
+        <h2>Introduction</h2>
+        <p><strong>Micah George</strong>, Computer Engineering Major</p>
+        <p>I’ve always been active in robotics-related electives and projects through high school and college. I chose to dissect the Taylor Digital Kitchen Scale (Model 5273821) because it demonstrates sensor interfacing, provides insight into signal processing & digital filtering, contains a microcontroller-based system with an LCD interface, and is ideal for studying low-power embedded system design.</p>
 
-        <h2>2. Product Market and Retail Information</h2>
-        <ul>
-            <li><strong>Product History:</strong> Taylor has been producing precision measurement instruments for over 150 years. This digital kitchen scale is part of their home appliance product line.</li>
-            <li><strong>MSRP and Street Prices:</strong> MSRP around $25, typically found online for $15–$20.</li>
-            <li><strong>Retail Outlets:</strong> Available at Amazon, Walmart, Target, and Taylor's official site.</li>
-            <li><strong>Rebranded/OEM Versions:</strong> Often rebranded by home goods companies under private labels.</li>
-        </ul>
+        <div class="section-divider"></div>
 
-        <h2>3. Dissection Photo Journal</h2>
-        <img src="01-boxedscale.jpg" alt="Boxed Scale">
-        <img src="02-unboxing1.jpg" alt="Unboxing Step 1">
-        <img src="03-unboxing2.jpg" alt="Unboxing Step 2">
-        <img src="04-unboxing3.jpg" alt="Unboxing Step 3">
-        <img src="05-predissection1.jpg" alt="Pre-dissection View 1">
-        <img src="06-predissection2.jpg" alt="Pre-dissection View 2">
-        <img src="07-predissection3.jpg" alt="Pre-dissection View 3">
-        <img src="08-predissection4.jpg" alt="Pre-dissection View 4">
-        <img src="09-batteries.jpg" alt="Battery Compartment">
-        <img src="10-packaginginfo.jpg" alt="Packaging Info">
+        <h2>Product Market and Retail Information</h2>
+        <p>The Taylor Digital Kitchen Scale has been a popular household item, often found in retail stores like Target, Walmart, and online outlets such as Amazon. It is commonly priced around $20 to $25. OEM versions and rebrands are seen under generic store brands.</p>
 
-        <h2>4. Product Operation</h2>
-        <ul>
-            <li><strong>Human-machine interfaces:</strong> Power/Tare button, Unit button, Hold button, LCD screen.</li>
-            <li><strong>Usage Timing Diagrams:</strong> Pending measurement capture and debounce routines.</li>
-        </ul>
+        <div class="section-divider"></div>
 
-        <h2>5. Product Analysis</h2>
-        <ul>
-            <li><strong>High-level Product Design Diagram:</strong> To be drafted.</li>
-            <li><strong>Electronic Block Diagrams:</strong> Will include microcontroller, load cell amplifier, display, and input buttons.</li>
-            <li><strong>Expected Operation Tables:</strong> Values for voltage, current, battery life estimation to be tested.</li>
-            <li><strong>Component Schematics and BoM:</strong> In development with estimated component prices and material costs.</li>
-        </ul>
+        <h2>Dissection Photo Journal</h2>
+        <div class="gallery">
+            <div>
+                <img src="01-boxedscale.jpg" alt="Boxed Scale">
+                <div class="caption">Boxed Scale</div>
+            </div>
+            <div>
+                <img src="02-unboxing1.jpg" alt="Unboxing Step 1">
+                <div class="caption">Unboxing Step 1</div>
+            </div>
+            <div>
+                <img src="03-unboxing2.jpg" alt="Unboxing Step 2">
+                <div class="caption">Unboxing Step 2</div>
+            </div>
+            <div>
+                <img src="04-unboxing3.jpg" alt="Unboxing Step 3">
+                <div class="caption">Unboxing Step 3</div>
+            </div>
+            <div>
+                <img src="05-predissection1.jpg" alt="Pre-Dissection View 1">
+                <div class="caption">Pre-Dissection View 1</div>
+            </div>
+            <div>
+                <img src="06-predissection2.jpg" alt="Pre-Dissection View 2">
+                <div class="caption">Pre-Dissection View 2</div>
+            </div>
+            <div>
+                <img src="07-predissection3.jpg" alt="Pre-Dissection View 3">
+                <div class="caption">Pre-Dissection View 3</div>
+            </div>
+            <div>
+                <img src="08-predissection4.jpg" alt="Pre-Dissection View 4">
+                <div class="caption">Pre-Dissection View 4</div>
+            </div>
+            <div>
+                <img src="09-batteries.jpg" alt="Battery Compartment">
+                <div class="caption">Battery Compartment</div>
+            </div>
+            <div>
+                <img src="10-packaginginfo.jpg" alt="Packaging Information">
+                <div class="caption">Packaging Information</div>
+            </div>
+        </div>
 
-        <h2>6. Product Reassembly</h2>
-        <p>The product must be successfully reassembled and verified to function as originally intended. Final checks are pending.</p>
+        <div class="section-divider"></div>
 
-        <h2>7. Lessons Learned</h2>
-        <p>This dissection project gave me hands-on insight into embedded design decisions, challenges with compact form factor integration, and provided practical understanding of system power management.</p>
+        <h2>Product Operation</h2>
+        <p>[To be completed with diagrams and explanations on user interaction, interfaces, and timing behavior]</p>
+
+        <div class="section-divider"></div>
+
+        <h2>Product Analysis</h2>
+        <p>[To be completed with high-level diagrams, schematics, BOMs, expected measurements]</p>
+
+        <div class="section-divider"></div>
+
+        <h2>Product Reassembly</h2>
+        <p>[To be completed with notes on the reassembly process and functionality check]</p>
+
+        <div class="section-divider"></div>
+
+        <h2>Lessons Learned</h2>
+        <p>[To be completed with personal and technical reflections from the dissection process]</p>
     </div>
 </body>
 </html>
