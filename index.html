@@ -6,134 +6,139 @@
     <title>Kitchen Scale Dissection Project | Micah George</title>
     <style>
         body {
-            background-color: #111;
-            color: #e0e0e0;
+            background-color: black;
+            color: blue;
             font-family: Arial, sans-serif;
             text-align: center;
         }
         h1 {
             text-transform: uppercase;
-            font-size: 5vw;
+            font-size: 6vw;
             font-weight: bold;
             margin: 20px 0;
         }
         h2 {
             text-transform: uppercase;
-            font-size: 2.5vw;
+            font-size: 3vw;
             font-weight: bold;
-            margin: 30px 0 10px;
-        }
-        p, li {
-            font-size: 1.2em;
-            line-height: 1.6;
-            text-align: left;
+            margin-top: 40px;
         }
         .container {
-            width: 90%;
+            width: 80%;
             margin: auto;
             padding: 20px;
         }
-        .section-divider {
-            border-top: 2px solid #00aaff;
-            margin: 40px 0;
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
-            justify-items: center;
             margin-top: 20px;
         }
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border: 1px solid #444;
-            border-radius: 8px;
+        .gallery-item {
+            background-color: #111;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            border-radius: 10px;
         }
         .caption {
             font-size: 1em;
             margin-top: 8px;
-            color: #ccc;
+        }
+        .section-divider {
+            border-top: 2px solid blue;
+            margin: 40px 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Kitchen Scale Dissection Project</h1>
+        <h1>Dissection Journal</h1>
+
         <h2>Introduction</h2>
-        <p><strong>Micah George</strong>, Computer Engineering Major</p>
-        <p>I’ve always been active in robotics-related electives and projects through high school and college. I chose to dissect the Taylor Digital Kitchen Scale (Model 5273821) because it demonstrates sensor interfacing, provides insight into signal processing & digital filtering, contains a microcontroller-based system with an LCD interface, and is ideal for studying low-power embedded system design.</p>
+        <p>Micah George, Computer Engineering Major</p>
+        <p>Having always been active in robotics-related electives and projects through high school and college, I chose to dissect the Taylor Digital Kitchen Scale (Model 5273821) because it demonstrates sensor interfacing, provides insight into signal processing & digital filtering, contains a microcontroller-based system with an LCD interface, and is useful for learning low-power embedded system design.</p>
 
         <div class="section-divider"></div>
 
         <h2>Product Market and Retail Information</h2>
-        <p>The Taylor Digital Kitchen Scale has been a popular household item, often found in retail stores like Target, Walmart, and online outlets such as Amazon. It is commonly priced around $20 to $25. OEM versions and rebrands are seen under generic store brands.</p>
+        <p>Details about product history, MSRP, retailers, and OEM versions will be included here.</p>
 
         <div class="section-divider"></div>
 
         <h2>Dissection Photo Journal</h2>
         <div class="gallery">
-            <div>
+            <div class="gallery-item">
                 <img src="01-boxedscale.jpg" alt="Boxed Scale">
-                <div class="caption">Boxed Scale</div>
+                <div class="caption">Boxed Taylor Digital Kitchen Scale</div>
             </div>
-            <div>
-                <img src="02-unboxing1.jpg" alt="Unboxing Step 1">
-                <div class="caption">Unboxing Step 1</div>
+            <div class="gallery-item">
+                <img src="02-unboxing1.jpg" alt="Unboxing 1">
+                <div class="caption">Beginning the unboxing process</div>
             </div>
-            <div>
-                <img src="03-unboxing2.jpg" alt="Unboxing Step 2">
-                <div class="caption">Unboxing Step 2</div>
+            <div class="gallery-item">
+                <img src="03-unboxing2.jpg" alt="Unboxing 2">
+                <div class="caption">Removing scale from box</div>
             </div>
-            <div>
-                <img src="04-unboxing3.jpg" alt="Unboxing Step 3">
-                <div class="caption">Unboxing Step 3</div>
+            <div class="gallery-item">
+                <img src="04-unboxing3.jpg" alt="Unboxing 3">
+                <div class="caption">Initial view of scale and packaging</div>
             </div>
-            <div>
-                <img src="05-predissection1.jpg" alt="Pre-Dissection View 1">
-                <div class="caption">Pre-Dissection View 1</div>
+            <div class="gallery-item">
+                <img src="05-predissection1.jpg" alt="Pre-dissection 1">
+                <div class="caption">Scale before dissection</div>
             </div>
-            <div>
-                <img src="06-predissection2.jpg" alt="Pre-Dissection View 2">
-                <div class="caption">Pre-Dissection View 2</div>
+            <div class="gallery-item">
+                <img src="06-predissection2.jpg" alt="Pre-dissection 2">
+                <div class="caption">Rear view of scale prior to disassembly</div>
             </div>
-            <div>
-                <img src="07-predissection3.jpg" alt="Pre-Dissection View 3">
-                <div class="caption">Pre-Dissection View 3</div>
+            <div class="gallery-item">
+                <img src="07-predissection3.jpg" alt="Pre-dissection 3">
+                <div class="caption">Top view with stainless tray</div>
             </div>
-            <div>
-                <img src="08-predissection4.jpg" alt="Pre-Dissection View 4">
-                <div class="caption">Pre-Dissection View 4</div>
+            <div class="gallery-item">
+                <img src="08-predissection4.jpg" alt="Pre-dissection 4">
+                <div class="caption">Close-up of control buttons</div>
             </div>
-            <div>
+            <div class="gallery-item">
                 <img src="09-batteries.jpg" alt="Battery Compartment">
-                <div class="caption">Battery Compartment</div>
+                <div class="caption">Battery compartment with AAA batteries</div>
             </div>
-            <div>
-                <img src="10-packaginginfo.jpg" alt="Packaging Information">
-                <div class="caption">Packaging Information</div>
+            <div class="gallery-item">
+                <img src="10-packaginginfo.jpg" alt="Packaging Info">
+                <div class="caption">Manufacturer and compliance info</div>
             </div>
         </div>
 
         <div class="section-divider"></div>
 
         <h2>Product Operation</h2>
-        <p>[To be completed with diagrams and explanations on user interaction, interfaces, and timing behavior]</p>
+        <p>Details about user interaction and usage diagrams will be added here.</p>
 
         <div class="section-divider"></div>
 
         <h2>Product Analysis</h2>
-        <p>[To be completed with high-level diagrams, schematics, BOMs, expected measurements]</p>
+        <p>Design diagrams, BoM tables, schematics, and power metrics will be inserted here.</p>
 
         <div class="section-divider"></div>
 
         <h2>Product Reassembly</h2>
-        <p>[To be completed with notes on the reassembly process and functionality check]</p>
+        <p>Notes on the reassembly process and functionality testing go here.</p>
 
         <div class="section-divider"></div>
 
         <h2>Lessons Learned</h2>
-        <p>[To be completed with personal and technical reflections from the dissection process]</p>
+        <p>Reflections and key takeaways from the dissection project.</p>
+
+        <div class="section-divider"></div>
+
     </div>
 </body>
 </html>
