@@ -34,14 +34,31 @@
         p, li {
             font-size: 1.1rem;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-        }
         ul {
             padding-left: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery figure {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .gallery figcaption {
+            text-align: center;
+            font-size: 0.95rem;
+            margin-top: 8px;
         }
     </style>
 </head>
@@ -62,16 +79,48 @@
         </ul>
 
         <h2>3. Dissection Photo Journal</h2>
-        <img src="01-boxedscale.jpg" alt="Boxed Scale">
-        <img src="02-unboxing1.jpg" alt="Unboxing Step 1">
-        <img src="03-unboxing2.jpg" alt="Unboxing Step 2">
-        <img src="04-unboxing3.jpg" alt="Unboxing Step 3">
-        <img src="05-predissection1.jpg" alt="Pre-dissection View 1">
-        <img src="06-predissection2.jpg" alt="Pre-dissection View 2">
-        <img src="07-predissection3.jpg" alt="Pre-dissection View 3">
-        <img src="08-predissection4.jpg" alt="Pre-dissection View 4">
-        <img src="09-batteries.jpg" alt="Battery Compartment">
-        <img src="10-packaginginfo.jpg" alt="Packaging Info">
+        <div class="gallery">
+            <figure>
+                <img src="01-boxedscale.jpg" alt="Boxed Scale">
+                <figcaption>Boxed Taylor Digital Kitchen Scale</figcaption>
+            </figure>
+            <figure>
+                <img src="02-unboxing1.jpg" alt="Unboxing Step 1">
+                <figcaption>Initial unboxing – opening the package</figcaption>
+            </figure>
+            <figure>
+                <img src="03-unboxing2.jpg" alt="Unboxing Step 2">
+                <figcaption>Unboxing continued – accessories visible</figcaption>
+            </figure>
+            <figure>
+                <img src="04-unboxing3.jpg" alt="Unboxing Step 3">
+                <figcaption>Fully unboxed with protective padding</figcaption>
+            </figure>
+            <figure>
+                <img src="05-predissection1.jpg" alt="Pre-dissection View 1">
+                <figcaption>Top view before dissection</figcaption>
+            </figure>
+            <figure>
+                <img src="06-predissection2.jpg" alt="Pre-dissection View 2">
+                <figcaption>Side view showing control buttons</figcaption>
+            </figure>
+            <figure>
+                <img src="07-predissection3.jpg" alt="Pre-dissection View 3">
+                <figcaption>Back panel with battery compartment</figcaption>
+            </figure>
+            <figure>
+                <img src="08-predissection4.jpg" alt="Pre-dissection View 4">
+                <figcaption>Underside with rubber feet and screws</figcaption>
+            </figure>
+            <figure>
+                <img src="09-batteries.jpg" alt="Battery Compartment">
+                <figcaption>Battery compartment revealed</figcaption>
+            </figure>
+            <figure>
+                <img src="10-packaginginfo.jpg" alt="Packaging Info">
+                <figcaption>Manufacturer and compliance info on packaging</figcaption>
+            </figure>
+        </div>
 
         <h2>4. Product Operation</h2>
         <ul>
