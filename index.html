@@ -188,13 +188,42 @@
             </p>
         </div>
 
+        <h3>Timing Diagram: Scale Weight Update Behavior</h3>
+        <p>To better understand the operation of the scale during usage, the following timing diagram demonstrates how weight readings update after a delay of approximately one second. This ensures the scale stabilizes before displaying a final value. Additionally, the diagram illustrates the effect of the “HOLD” button. When this button is pressed, the currently displayed weight is latched—even if the object is removed or changed.</p>
+
+        <img src="timingdiagram.png" alt="Weight Update Timing Diagram" style="width:100%; max-width:600px;">
+        <figcaption><strong>Figure:</strong> Weight update behavior with and without HOLD activated.</figcaption>
+
         <h2>5. Product Analysis</h2>
-        <ul>
-            <li><strong>High-level Product Design Diagram:</strong> To be drafted.</li>
-            <li><strong>Electronic Block Diagrams:</strong> Will include microcontroller, load cell amplifier, display, and input buttons.</li>
-            <li><strong>Expected Operation Tables:</strong> Values for voltage, current, battery life estimation to be tested.</li>
-            <li><strong>Component Schematics and BoM:</strong> In development with estimated component prices and material costs.</li>
-        </ul>
+        <h3>System-Level Design and Electrical Analysis</h3>
+            <p>To analyze the digital scale, it’s important to first understand how its internal systems interact. The high-level block diagram below outlines the connections between the main microcontroller, the load cell (for measuring weight), the LCD (for displaying output), the button interface microcontroller, and the power source.</p>
+
+        <img src="highlevelblockdiagram.png" alt="High-Level Block Diagram" style="width:100%; max-width:600px;">
+        <figcaption><strong>Figure:</strong> High-level block diagram of system connectivity in the digital kitchen scale.</figcaption>
+
+            <p>Following this, a full circuit diagram presents the comprehensive electrical layout of the scale. It details the specific wiring and interaction between subsystems.</p>
+
+        <img src="fullcircuitdiagram.png" alt="Full Circuit Diagram" style="width:100%; max-width:800px;">
+        <figcaption><strong>Figure:</strong> Full schematic of the kitchen scale’s internal circuitry.</figcaption>
+
+        <p>The tables below summarize expected and extreme electrical values observed during the operation of the scale, including voltages, current draws, power usage, and estimated battery life under typical and extreme scenarios.</p>
+
+        <img src="extremestable.png" alt="Electrical Extremes Table" style="width:100%; max-width:800px;">
+        <figcaption><strong>Table:</strong> Electrical performance across standard and extreme use cases.</figcaption>
+
+        <p>In addition to electrical metrics, the following table focuses on mechanical and timing characteristics during use, including maximum and minimum detectable weights, HOLD duration, time to reading update, and the behavior of the tare function.</p>
+
+        <img src="extremestable-scaleoperations.png" alt="Operational Extremes Table" style="width:100%; max-width:800px;">
+        <figcaption><strong>Table:</strong> Scale operation extremes and key usage metrics.</figcaption>
+
+        <h4>Microcontroller Subsystems</h4>
+        <p>The scale uses two microcontrollers—one for overall control, and another dedicated to processing button inputs. The diagrams below show the circuitry for each subsystem.</p>
+
+        <img src="primarymicrocontrollercircuit.png" alt="Primary Microcontroller Circuit" style="width:100%; max-width:600px;">
+        <figcaption><strong>Figure:</strong> Circuit diagram for the primary microcontroller responsible for core operations.</figcaption>
+
+        <img src="buttoninputmicrocontrollercircuit.png" alt="Button Input Microcontroller Circuit" style="width:100%; max-width:600px;">
+        <figcaption><strong>Figure:</strong> Circuit diagram for the microcontroller that handles button inputs.</figcaption>
 
         <p>
         This section provides a breakdown of the individual mechanical and electronic components that make up the digital kitchen scale. Each part has been assessed for its material composition, estimated weight, and approximate cost to provide a comprehensive Bill of Materials.
